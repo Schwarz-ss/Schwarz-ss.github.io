@@ -1,16 +1,77 @@
+p code, li code, h1 code, h2 code, h3 code {
+  display: inline-block;
+  white-space: no-wrap;
+  background: #f6f6f6;
+  font-size: .9em;
+  line-height: 1.5em;
+  color: #464646;
+  border: 1px solid #eeeeee;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  -ms-border-radius: 0.4em;
+  -o-border-radius: 0.4em;
+  border-radius: 0.4em;
+  padding: 0 .3em;
+  margin: -1px 0;
+}
+
+.article-content a {
+  color: #21afd3;
+}
+
+.article-content a:hover {
+  color: #ff6557;
+  text-decoration: underline;
+}
+
 @font-face {
-    font-family: "Meiryo";
-    src: url("/fonts/Meiryo.eot");
-    /* IE9 */
-    src: url("/fonts/Meiryo.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("/fonts/Meiryo.woff") format("woff"), /* chrome, firefox */
-    url("/fonts/Meiryo.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-    url("/fonts/Meiryo.svg#Meiryo") format("svg");
-    /* iOS 4.1- */
-    font-style: normal;
-    font-weight: normal;
-  }
-  html.page-home {
+  font-family: 'CaskaydiaCove Nerd Font';
+  src: url('/fonts/subset-CaskaydiaCoveNerdFontComplete-.eot');
+  src: url('/fonts/subset-CaskaydiaCoveNerdFontComplete-.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/subset-CaskaydiaCoveNerdFontComplete-.woff2') format('woff2'),
+      url('/fonts/subset-CaskaydiaCoveNerdFontComplete-.woff') format('woff'),
+      url('/fonts/subset-CaskaydiaCoveNerdFontComplete-.ttf') format('truetype'),
+      url('/fonts/subset-CaskaydiaCoveNerdFontComplete-.svg#CaskaydiaCoveNerdFontComplete-') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+code[class*="language-"],
+pre[class*="language-"] {
+border-radius: .6em;
+  font-family: 'CaskaydiaCove Nerd Font' !important;
+}
+
+code {
+  font-family: 'CaskaydiaCove Nerd Font' !important;
+}
+
+.article-content {
+  font-family: 'CaskaydiaCove Nerd Font';
+}
+
+.original {
+  margin: 2em 0 0;
+  padding: .5em 1em;
+  border-left: 3px solid #fbbc97;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  list-style: none;
+}
+
+.footnote-item p {
+  line-height: 0;
+}
+
+.article-content li {
+  line-height: 2em;
+}
+
+
+  /* html.page-home {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,4 +88,4 @@
     /*background-blend-mode: screen;*/
   
     /*background: linear-gradient(to left, #5f2c82, #49a09d);*/
-  }
+  /* } */
